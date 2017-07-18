@@ -52,7 +52,7 @@ def export_all_contact_emails_to_spreadsheet(url)
 end
 
 save_to_json_file("http://annuaire-des-mairies.com/val-d-oise.html")
-# export_all_contact_emails_to_spreadsheet("http://annuaire-des-mairies.com/val-d-oise.html")
+export_all_contact_emails_to_spreadsheet("http://annuaire-des-mairies.com/val-d-oise.html")
 
 
 

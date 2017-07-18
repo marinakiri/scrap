@@ -1,4 +1,4 @@
-require 'nokogiri'   
+cd girequire 'nokogiri'   
 require 'open-uri'
 
 url = "https://en.wikipedia.org/wiki/HTML"
