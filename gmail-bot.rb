@@ -1,11 +1,12 @@
 require 'gmail'
-username = GMAIL_USERNAME
-password = GMAIL_PASSWORD
+
+username = ENV["GMAIL_USERNAME"]
+password = ENV["GMAIL_PASSWORD"]
 
 gmail = Gmail.connect(username, password)
 
 email = gmail.compose do
-  to "email@example.com"
+  to "achille.xavier@yahoo.com"
   subject "Having fun in Puerto Rico!"
   body "Spent the day on the road..."
 end
@@ -13,6 +14,8 @@ email.deliver! # or: gmail.deliver(email)
 
 
 =begin 
+
+Instead of 'compose' + 'deliver', there is also a global method 'deliver'
 
 gmail.deliver do
   to "email@example.com"
